@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+    <title>Top Pot Donuts</title>
+</head>
+<body>
+  <main id="content"></main>
+    <h1>Top Pot Donuts</h1>
+    <p>The following graph charts daily and hourly production numbers for the five locations of <strong><em>Top Pot Donuts!</em></strong></p>
+    <table>
+      <tr><th></th><td>7:00 AM</td><td>8:00 AM</td><td>9:00 AM</td><td>10:00 AM</td><td>11:00 AM</td><td>12:00 PM</td><td>1:00 PM</td><td>2:00 PM</td><td>3:00 PM</td><td>4:00 PM</td><td>5:00 PM</td><td>6:00 PM</td><td><strong>Total: </strong></td></tr>
+      <tr id="branch1"><th>Downtown</th></tr>
+      <tr id="branch2"><th>Capitol Hill</th></tr>
+      <tr id="branch3"><th>South Lake Union</th></tr>
+      <tr id="branch4"><th>Wedgewood</th></tr>
+      <tr id="branch5"><th>Ballard</th></tr>
+    </table>
+  <script>
+    var TopPot = function(branchName, minCust, maxCust, avgPerCust) {
+      this.branchName = branchName;
+      this.minCust = minCust;
+      this.maxCust = maxCust;
+      this.avgPerCust = avgPerCust;
+      this.hourlyTotals = [];
+    };
+
+    TopPot.prototype.donutsPerHour = function(branchName, minCust, maxCust, avgPerCust) {
+      var custPerHour = Math.floor(Math.random() * (this.maxCust - this.minCust + 1)) + this.minCust;
+      return Math.round(custPerHour * this.avgPerCust);
+    };
+
+    TopPot.prototype.donutsPerDay = function() {
+      var total = 0;
+      var hourlyDonuts = 0;
+      for (var i = 0; i <= 12; i++) {
+        hourlyDonuts = this.donutsPerHour();
+        this.hourlyTotals.push(hourlyDonuts);
+        total += hourlyDonuts;
+      }
+      return total;
+    };
+
+    TopPot.prototype.render = function() {
+      var perDay = this.donutsPerDay();
+      var elTr = document.getElementById(this.branchName);
+      for (var i = 0; i <= 12; i++) {
+        var el = document.createElement('td');
+        el.textContent = this.hourlyTotals[i];
+        elTr.appendChild(el);
+      }
+      el.textContent = perDay;
+      elTr.appendChild(el);
+    };
+
+    var downtown = new TopPot('branch1', 8, 43, 4.5);
+    var capitolHill = new TopPot('branch2', 4, 37, 2);
+    var southLakeUnion = new TopPot('branch3', 9, 23, 6.33);
+    var wedgewood = new TopPot('branch4', 2, 28, 1.25);
+    var ballard = new TopPot('branch5', 8, 58, 3.75);
+    downtown.render();
+    capitolHill.render();
+    southLakeUnion.render();
+    wedgewood.render();
+    ballard.render();
+  </script>
+</body>
+</html>
