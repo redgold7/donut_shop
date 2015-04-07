@@ -9,7 +9,7 @@
     <h1>Top Pot Donuts</h1>
     <p>The following graph charts daily and hourly production numbers for the five locations of <strong><em>Top Pot Donuts!</em></strong></p>
     <table>
-      <tr><th></th><td>7:00 AM</td><td>8:00 AM</td><td>9:00 AM</td><td>10:00 AM</td><td>11:00 AM</td><td>12:00 PM</td><td>1:00 PM</td><td>2:00 PM</td><td>3:00 PM</td><td>4:00 PM</td><td>5:00 PM</td><td>6:00 PM</td><td><strong>Total: </strong></td></tr>
+      <tr><th></th><td>7:00 AM</td><td>8:00 AM</td><td>9:00 AM</td><td>10:00 AM</td><td>11:00 AM</td><td>12:00 PM</td><td>1:00 PM</td><td>2:00 PM</td><td>3:00 PM</td><td>4:00 PM</td><td>5:00 PM</td><td><strong>Total: </strong></td></tr>
       <tr id="branch1"><th>Downtown</th></tr>
       <tr id="branch2"><th>Capitol Hill</th></tr>
       <tr id="branch3"><th>South Lake Union</th></tr>
@@ -33,7 +33,7 @@
     TopPot.prototype.donutsPerDay = function() {
       var total = 0;
       var hourlyDonuts = 0;
-      for (var i = 0; i <= 12; i++) {
+      for (var i = 0; i <= 11; i++) {
         hourlyDonuts = this.donutsPerHour();
         this.hourlyTotals.push(hourlyDonuts);
         total += hourlyDonuts;
@@ -44,7 +44,7 @@
     TopPot.prototype.render = function() {
       var perDay = this.donutsPerDay();
       var elTr = document.getElementById(this.branchName);
-      for (var i = 0; i <= 12; i++) {
+      for (var i = 0; i <= 11; i++) {
         var el = document.createElement('td');
         el.textContent = this.hourlyTotals[i];
         elTr.appendChild(el);
