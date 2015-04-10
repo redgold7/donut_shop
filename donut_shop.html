@@ -3,25 +3,31 @@
 <head>
   <meta charset="UTF-8">
     <title>Top Pot Donuts</title>
+    <link rel="stylesheet" type="text/css" href="styling.css">
+    <link href='http://fonts.googleapis.com/css?family=Amatic+SC' rel='stylesheet' type='text/css'>
 </head>
 <body>
   <main id="content"></main>
-    <h1>Top Pot Donuts</h1>
-      <form id="addStoreForm">
-        <label for="addStoreName">Store name here: </label>
-          <input name="addStoreName" type="text" placeholder="Store name">
-        <label for="addStoreMin">Store minimum/hour: </label>
-          <input name="addStoreMin" type="text" placeholder="Minimum #">
-        <label for="addStoreMax">Store maximum/hour: </label>
-          <input name="addStoreMax" type="text" placeholder="Maximum #">
-        <label for="addStoreAvg">Store average/customer: </label>
-          <input name="addStoreAvg" type="text" placeholder="Average per customer">
-        <button type="submit">Add store!</button>
-      </form>
-      <p>The following table charts the daily and hourly production numbers for <strong><em>Top Pot Donuts!</em></strong></p>
-      <table id="hourlyTotalTable">
-        <tr><th><strong><u>Location:</u></strong></th><td>7:00 AM</td><td>8:00 AM</td><td>9:00 AM</td><td>10:00 AM</td><td>11:00 AM</td><td>12:00 PM</td><td>1:00 PM</td><td>2:00 PM</td><td>3:00 PM</td><td>4:00 PM</td><td>5:00 PM</td><td><strong><u>Total: </u></strong></td></tr>
-      </table>
+    <h1>Top Pot Doughnuts</h1>
+    <p>Enter store information below to add a location!</p>
+    <form id="addStoreForm">
+      <label for="addStoreName">Store name here: </label>
+        <input name="addStoreName" type="text" placeholder="Store name">
+      <label for="addStoreMin">Store minimum/hour: </label>
+        <input name="addStoreMin" type="text" placeholder="Minimum #">
+      <label for="addStoreMax">Store maximum/hour: </label>
+        <input name="addStoreMax" type="text" placeholder="Maximum #">
+      <label for="addStoreAvg">Store average/customer: </label>
+        <input name="addStoreAvg" type="text" placeholder="Average per customer">
+      <button type="submit">Add store!</button>
+    </form>
+      <p>The following table charts the daily and hourly production numbers for Top Pot Donuts!</p>
+      <div class="table">
+        <table id="hourlyTotalTable">
+          <tr><th><strong><u>Location: </u></strong></th><td>7:00 AM</td><td>8:00 AM</td><td>9:00 AM</td><td>10:00 AM</td><td>11:00 AM</td><td>12:00 PM</td><td>1:00 PM</td><td>2:00 PM</td><td>3:00 PM</td><td>4:00 PM</td><td>5:00 PM</td><td><strong><u>Total: </u></strong></td></tr>
+        </table>
+        <img src="http://i.huffpost.com/gen/1177833/original.jpg"
+      </div>
   <script src="donut_shop.js"></script>
   <script src="donut_events.js"></script>
 </body>

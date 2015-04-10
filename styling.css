@@ -1,0 +1,60 @@
+* {
+  font-family: "Trebuchet MS", Helvetica, sans-serif;
+  background-color: #a8c7cf;
+  font-size: 1em;
+}
+
+p {
+  font-family: 'Amatic SC', cursive;
+  font-size: 2.25em;
+  font-style: bold;
+  text-align: center;
+  font-weight: 900;
+  padding: 0;
+}
+
+h1 {
+  font-family: 'Amatic SC', cursive;
+  border: 6px ridge #7a000a;
+  border-radius: 7px;
+  text-align: center;
+  font-size: 5em;
+  background-color: #918f8f;
+}
+
+input {
+  background-color: #ffffff;
+  border-radius: 5px;
+  border: 2px ridge #7a000a;
+}
+
+button {
+  background-color: #918f8f;
+  border-radius: 5px;
+  border: 2px ridge #7a000a;
+}
+
+table {
+  font-family: 'Amatic SC', cursive;
+  font-size: 1em;
+  text-align: center;
+}
+
+.table {
+  position: relative;
+  overflow: hidden;
+}
+.table h1 {
+  padding: 100px;
+  position: relative;
+  z-index: 2;
+}
+.table img {
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: auto;
+  opacity: 0.1;
+}
+
