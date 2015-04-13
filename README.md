@@ -7,3 +7,6 @@ Create render function and events to allow usability of form
 
 #stlying update
 Added basic styling to html and added css styling file
+
+#layout update
+Added layout alterations
