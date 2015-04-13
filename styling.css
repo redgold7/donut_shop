@@ -1,0 +1,77 @@
+body {
+  font-family: "Trebuchet MS", Helvetica, sans-serif;
+  background-color: #a8c7cf;
+}
+
+.homer {
+  margin-top: 4px;
+  margin-left: 4px;
+  width: 100px;
+  height: 100px;
+  border: 1px solid #ffffff;
+  position: fixed;
+  z-index: 10;
+}
+
+h1 {
+  font-family: 'Amatic SC', "Trebuchet MS", Helvetica, sans-serif;
+  border: 5px outset #FAF4EE;
+  text-align: center;
+  font-size: 5em;
+}
+
+h2 {
+  font-family: 'Amatic SC', "Trebuchet MS", Helvetica, sans-serif;
+  font-size: 2em;
+  font-style: bold;
+  font-weight: 900;
+  text-align: left;
+}
+
+input {
+  background-color: #ffffff;
+  border-radius: 5px;
+  border: 2px ridge #7a000a;
+}
+
+button {
+  margin: 18px 25px;
+  background-color: #918f8f;
+  border: 2px ridge #7a000a;
+  border-radius: 5px;
+  position: absolute;
+}
+
+li {
+  padding: 10px;
+}
+
+.form {
+  list-style-image: url("http://i.imgur.com/AJfYFYw.jpg");
+  display: inline-block;
+  border: 2px solid #7a000a;
+  border-radius: 10px;
+  margin: 10px;
+  padding: 5px;
+}
+
+.table {
+  position: relative;
+  overflow: hidden;
+  border: 1px solid #ffffff;
+}
+
+.table h1 {
+  padding: 100px;
+  position: relative;
+  z-index: 2;
+}
+
+.table img {
+  position: absolute;
+  left: 0;
+  top: 0;
+  max-width: 100%;
+  height: auto;
+  opacity: 0.1;
+}
