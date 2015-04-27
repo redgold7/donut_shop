@@ -3,21 +3,13 @@ body {
   background-color: #a8c7cf;
 }
 
-.homer {
-  margin-top: 4px;
-  margin-left: 4px;
-  width: 100px;
-  height: 100px;
-  border: 1px solid #ffffff;
-  position: fixed;
-  z-index: 10;
-}
-
 h1 {
   font-family: 'Amatic SC', "Trebuchet MS", Helvetica, sans-serif;
   border: 5px outset #FAF4EE;
   text-align: center;
   font-size: 5em;
+  background-color: #7a000a;
+  color: #fff;
 }
 
 h2 {
@@ -46,7 +38,11 @@ li {
   padding: 10px;
 }
 
-.form {
+#main-header {
+  margin: 5px auto;
+}
+
+#form {
   list-style-image: url("http://i.imgur.com/AJfYFYw.jpg");
   display: inline-block;
   border: 2px solid #7a000a;
@@ -55,23 +51,36 @@ li {
   padding: 5px;
 }
 
-.table {
+#table {
   position: relative;
   overflow: hidden;
   border: 1px solid #ffffff;
 }
 
-.table h1 {
+#table h1 {
   padding: 100px;
   position: relative;
   z-index: 2;
 }
 
-.table img {
+#table img {
   position: absolute;
   left: 0;
   top: 0;
   max-width: 100%;
   height: auto;
   opacity: 0.1;
+}
+
+#homer {
+
+  width: 100px;
+  height: 100px;
+  border: 1px solid #ffffff;
+  cursor: pointer;
+}
+
+#div:hover {
+  transform: rotateY(360deg);
+  -webkit-transition: all 3000ms cubic-bezier(0.000, -0.600, 1.000, 1.500);
 }

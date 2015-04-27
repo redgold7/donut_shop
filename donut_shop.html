@@ -4,15 +4,17 @@
   <meta charset="UTF-8">
     <title>Top Pot Donuts</title>
     <link rel="stylesheet" type="text/css" href="styling.css">
-    <link href='http://fonts.googleapis.com/css?family=Amatic+SC' rel='stylesheet' type='text/css'>
+    <link href="http://fonts.googleapis.com/css?family=Amatic+SC" rel="stylesheet" type="text/css">
 </head>
 <body>
   <header>
-    <img class="homer" src="http://blogs.phoenixnewtimes.com/bella/homerdonutdream1.jpg">
-    <h1>Top Pot Doughnuts</h1>
+    <div id="div">
+      <img id="homer" src="http://blogs.phoenixnewtimes.com/bella/homerdonutdream1.jpg">
+    </div>
+    <h1 id="main-header">Top Pot Doughnuts</h1>
   </header>
     <h2>Enter store information below to add a location!</h2>
-      <div class="form">
+      <article id="form">
         <form id="addStoreForm">
           <ul>
             <li><label for="addStoreName">Store name here: </label>
@@ -26,18 +28,18 @@
           </ul>
           <button type="submit">Add store!</button>
         </form>
-      </div>
+      </article>
     <h2>The following table charts the daily and hourly production numbers for Top Pot Donuts!</h2>
-    <div class="table">
+    <article id="table">
       <table id="hourlyTotalTable">
         <tr><th><u>Location: </u></th><td>7:00 AM</td><td>8:00 AM</td><td>9:00 AM</td><td>10:00 AM</td><td>11:00 AM</td><td>12:00 PM</td><td>1:00 PM</td><td>2:00 PM</td><td>3:00 PM</td><td>4:00 PM</td><td>5:00 PM</td><td><u>Total: </u></td></tr>
       </table>
       <img src="http://i.huffpost.com/gen/1177833/original.jpg">
-    </div>
+    </article>
   <footer>
     <h2>Thanks for visiting, have a nice day!</h2>
   </footer>
-</body>
 <script src="donut_shop.js"></script>
 <script src="donut_events.js"></script>
+</body>
 </html>
