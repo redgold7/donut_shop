@@ -1,5 +1,4 @@
 
-
   window.stores = [];
   var TopPot = function(branchName, minCust, maxCust, avgPerCust) {
       this.branchName = branchName;
