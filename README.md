@@ -10,3 +10,6 @@ Added basic styling to html and added css styling file
 
 #layout update
 Added layout alterations
+
+#animation update
+Added an animation to the top of the page and updated a few styling features
